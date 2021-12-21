@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musicplayer page</title>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/musicplayer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="musicplayer.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <ul class="navi" >
+        <li id="data"><b><a href="mainlanding.html">Home</a></b></li>
+        <li id="data"><b><a href="musicplayer.html">Music Player</a></b></li>
+        <li id="data"><b><a href="signup.html">Sign-Up</a></b></li>
+        <li id="data"><b><a href="contactus.html">Contact Us</a></b></li>
+        <!-- <li id="data"><b><a href="#">Terms of Use</a></b></li> -->
+    </ul>
+   </nav>
+
+<div id="music">
+    <div class="main">
+        <p id="logo"><i class="fa fa-music"></i>Music</p>
+
+      <!--- left part --->
+       <div class="left">
+
+        <!--- song img --->
+        <img id="track_image">
+           <div class="volume">
+              <p id="volume_show">90</p>
+              <i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound()" id="volume_icon"></i>
+              <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">
+           </div>
+
+       </div>
+
+
+       <!--- right part --->
+         <div class="right">
+
+          <div class="show_song_no">
+            <p id="present">1</p>
+            <p>/</p>
+            <p id="total">5</p>
+          </div>
+
+         <!--- song title & artist name --->
+        <p id="title">title.mp3</p>
+        <p id="artist">Artist name</p>
+
+        <!--- middle part --->
+             <div class="middle">
+               <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+               <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+               <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+           </div>
+
+         <!--- song duration part --->
+          <div class="duration">
+             <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+          </div>
+             <button id="auto" onclick="autoplay_switch()">Auto play <i class="fa fa-circle-o-notch" aria-hidden="true"></i></button>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+
+<footer id="ft">
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2>About Us</h2>
+                <a href="#">Blog</a>
+                <a href="#">Demo</a>
+                <a href="#">Customers</a>
+                <a href="#">Investors</a>
+                <a href="#">Terms of service</a>
+            </div>
+            <div class="footer-heading footer-2">
+              <h2>Contact Us</h2>
+              <a href="#">Jobs</a>
+              <a href="#">Support</a>
+              <a href="#">Contact</a>
+              <a href="#">Sponsorship</a>
+
+          </div>
+          <div class="footer-heading footer-3">
+              <h2>Social Media</h2>
+              <a href="#"><i class="fa fa-facebook fa-sm"></i>&nbspFacebook</a>
+              <a href="#"><i class="fa fa-instagram fa-sm"></i>&nbspInstagram</a>
+              <a href="#"><i class="fa fa-youtube fa-sm"></i>&nbspYoutube</a>
+              <a href="#"><i class="fa fa-twitter fa-sm"></i>&nbspTwitter</a>
+              <a href="#"><i class="fa fa-whatsapp fa-sm"></i>&nbspWhatsapp</a>
+          </div>
+          <div id="footer-email-form">
+              <h2>Join Our News Letter</h2>
+              <input type="email" placeholder="Enter your email" id="footer-email">
+              <input type="submit" value="sign-up" id="footer-email-btn">
+          </div>
+
+        </div>
+
+    </div>
+</footer>
+
+  <!--- Add javascript file --->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../js/musicplayer.js"></script>
+</body>
+</html>

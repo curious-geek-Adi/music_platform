@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign-up page</title>
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="navi" >
+            <li id="data"><b><a href="mainlanding.html">Home</a></b></li>
+            <li id="data"><b><a href="musicplayer.html">Music Player</a></b></li>
+            <li id="data"><b><a href="signup.html">Sign-Up</a></b></li>
+            <li id="data"><b><a href="contactus.html">Contact Us</a></b></li>
+            <!-- <li id="data"><b><a href="#">Terms of Use</a></b></li> -->
+        </ul>
+       </nav>
+
+
+
+    <div class="slid-container">
+      <div class="slide" id="slide-one">
+        <img src="../../assets/image/juja-han-uT55XxQLQGU-unsplash.jpg" alt="one">
+        <div class="caption"> Morning with Music</div>
+      </div>
+      <div class="slide">
+        <img src="../../assets/image/aditya-chinchure-ZhQCZjr9fHo-unsplash.jpg" alt="one">
+        <div class="caption">Full on Party</div>
+      </div>
+      <div class="slide">
+        <img src="../../assets/image/soundtrap-5Wj_tk8_Ens-unsplash.jpg" alt="one">
+        <div class="caption">Work Plus Music</div>
+      </div>
+      <div class="slide">
+        <img src="../../assets/image/viktor-forgacs-B88PgQXS4qg-unsplash.jpg" alt="one">
+        <div class="caption">Relax and Play</div>
+      </div>
+      <span class="arrow prev" onclick="controller(-1)">&#10094</span>
+      <span class="arrow next" onclick="controller(1)">&#10095</span>
+    </div>
+
+
+    <!-- <section id="first_section">
+        <p>Start Your Subscription</p>
+        <p>Make Favourite Collection</p>
+        <ul>
+            <li id="li_one">Make Favourite Collection</li>
+            <li id="li_two">Play in any no. devices</li>
+            <li id="li_three">Refresh Your Mood</li>
+            <li id="li_four">Get Recent launch </li>
+
+        </ul>
+       <p>Get Recent launch</p>
+    </section>
+<section> -->
+
+
+    <div id="sform">
+        <form action="musicplayer.html" id="regForm"   novalidate> <!-- novalidate : to stop browser's implicit validation-->
+            <table id="stable"  width="70%">
+                <caption>Signup Form</caption>
+               <tr><td> <label for="fname">First Name:</label></td>
+                    <td><input type="text" id="fname" placeholder="Aditya" name="myname"></td></tr>
+                <tr><td></td><td id="error1" class="error"></td></tr>
+                <tr><td><label for="lname">Last Name:</label></td>
+                    <td><input type="text" id="lname"  name="myname" placeholder="Lenka"></td></tr>
+                <tr><td></td><td id="error2" class="error"></td></tr>
+                <tr><td><label for="uname" >Set Username:</label></td>
+                    <td><input type="text" id="uname" placeholder="Adi97"  name="uname" ></td></tr>
+                <tr><td></td><td id="error3" class="error"></td></tr>
+                <tr><td><label for="pass" >Set Password:</label></td>
+                    <td><input type="password" id="pass" placeholder="Adity@78s" name="password" ></td></tr>
+                <tr><td></td><td id="error4" class="error"></td></tr>
+                <tr><td></td>
+                    <td><input type="checkbox" id="showp" name="showp" >
+                        <label for="pass" id="shwpswd">Show password</label></td></tr>
+                <tr><td><label for="cpass">Confirm Password:</label></td>
+                    <td><input type="password" id="cpass"  name="cpassword" ></td></tr>
+                <tr><td></td><td id="error5" class="error"></td></tr>
+                <tr><td><label for="email">Email Id:</label></td>
+                    <td><input type="email" id="email"  name="email"placeholder="aditya.2@xxx.com" ></td></tr>
+                <tr><td></td><td id="error6" class="error"></td></tr>
+                <tr><td><label for="mobile">Mobile number:</label></td>
+                    <td><input type="text" id="mobile" placeholder="+91 8399393902" name="mobile" ></td></tr>
+                <tr><td></td><td id="error7" class="error"></td></tr>
+                <tr><td><label for="age">Age:</label></td>
+                        <td><input type="number" id="age"placeholder="14+" name="age" ></td></tr>
+                <tr><td></td><td id="error8" class="error"></td></tr>
+                <tr><td colspan="2">
+                    <br>
+                    <input type="submit" value="SUBMIT"></td>
+                <!-- </td><td> -->
+                <!-- <br>
+
+                    </td> -->
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="reset">
+                    </td>
+                </tr>
+
+            </table>
+            </form>
+
+    </div>
+</section>
+
+
+
+       <footer id="ft">
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-heading footer-1">
+                    <h2>About Us</h2>
+                    <a href="#">Blog</a>
+                    <a href="#">Demo</a>
+                    <a href="#">Customers</a>
+                    <a href="#">Investors</a>
+                    <a href="#">Terms of service</a>
+                </div>
+                <div class="footer-heading footer-2">
+                  <h2>Contact Us</h2>
+                  <a href="#">Jobs</a>
+                  <a href="#">Support</a>
+                  <a href="#">Contact</a>
+                  <a href="#">Sponsorship</a>
+
+              </div>
+              <div class="footer-heading footer-3">
+                  <h2>Social Media</h2>
+                  <a href="#"><i class="fa fa-facebook fa-sm"></i>&nbspFacebook</a>
+                  <a href="#"><i class="fa fa-instagram fa-sm"></i>&nbspInstagram</a>
+                  <a href="#"><i class="fa fa-youtube fa-sm"></i>&nbspYoutube</a>
+                  <a href="#"><i class="fa fa-twitter fa-sm"></i>&nbspTwitter</a>
+                  <a href="#"><i class="fa fa-whatsapp fa-sm"></i>&nbspWhatsapp</a>
+              </div>
+              <div id="footer-email-form">
+                  <h2>Join Our News Letter</h2>
+                  <input type="email" placeholder="Enter your email" id="footer-email">
+                  <input type="submit" value="sign-up" id="footer-email-btn">
+              </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script >
+
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../js/slider.js"></script>
+ <script src="../js/Validate.js"></script>
+</body>
+</html>

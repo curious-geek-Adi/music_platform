@@ -1,0 +1,84 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: arial;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Outfit', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Josefin Sans', sans-serif; */
+font-family: 'Lora', serif;
+
+}
+
+.footer-container{
+    background-color: rgb(3, 3, 15);
+    padding:4rem 0 4rem 0;
+
+}
+
+.footer{
+    width:80%;
+    /* height: 40vh; */
+    height: 21vh;
+    /* background-color: rgb(165, 179, 165); */
+    color:white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:0 auto;
+}
+
+.footer-heading{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading h2{
+    margin-bottom: 2rem;
+}
+
+.footer-heading a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer-email-form h2{
+    margin-bottom: 40px;
+}
+
+#footer-email{
+    width:250px;
+    height:40px;
+    border-radius: 4px;
+    border:none;
+    outline:none;
+    padding-left: 0.5em;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top:1rem;
+}
+
+#footer-email{
+    color:grey;
+}
+
+#footer-email-btn{
+    width:100px;
+    height:40px;
+    border-radius: 4px;
+    background-color: red;
+    border:none;
+    color:white;
+    font-size:1rem;
+}
+#cont_title{
+    color:white;
+    margin-left: 130px;
+
+
+}
+
